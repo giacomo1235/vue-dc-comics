@@ -70,6 +70,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-content: center;
+    padding: 30px;
 }
 
 ul {
@@ -79,13 +80,20 @@ ul {
 }
 
 li {
+    text-transform: uppercase;
     display: flex;
-    align-content: center;
-    text-align: center;
-    padding: 2px 5px;
+    padding: 20px;
     a {
+        padding: 20px 0;
+        color: black;
+        font-weight:600;
         display: inline-block;
         text-decoration: none;
+        border-bottom: 5px solid transparent;
+        &:hover {
+          color: $blue_logo_color;
+          border-bottom: 5px solid $blue_logo_color;
+        }
     }
 }
 </style>
