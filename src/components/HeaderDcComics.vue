@@ -70,7 +70,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    padding: 30px;
+    padding-top: 30px;
 }
 
 ul {
