@@ -12,7 +12,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 export default {
   name: 'HeaderDcComics',
   data () {
@@ -70,7 +69,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    padding-top: 30px;
+    padding: 20px;
 }
 
 ul {
