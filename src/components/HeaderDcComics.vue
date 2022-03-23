@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <img src="@/assets/img/dc-logo.png" alt="logo" />
+      <img src="../assets/img/dc-logo.png" alt="logo" />
       <ul>
         <li v-for="link in links" :key="link.text">
           <a :href="link.href">{{ link.text }}</a>
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles/partials/variables";
+@import "../assets/styles/partials/variables";
 .container {
   width: 100%;
     display: flex;
