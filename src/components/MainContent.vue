@@ -6,7 +6,7 @@
         </div>
         <ul class="cards">
           <li v-for="card in cards" :key="card.text">
-            <img src="../assets/img/buy-comics-digital-comics.png"  :alt="card.text"> <!-- con card.image non va :src="require('../assets/img/' + card.image)" -->
+            <img :src="card.image"  :alt="card.text"> <!-- con card.image non va :src="require('../assets/img/' + card.image)" -->
             <a :href="card.href">{{ card.text }}</a>
           </li>
         </ul>
@@ -24,27 +24,27 @@ export default {
         {
           href: '#!',
           text: 'digital comics',
-          image: '../assets/img/buy-comics-digital-comics.png'
+          image: 'buy-comics-digital-comics.png'
         },
         {
           href: '#!',
           text: 'dc merchandise',
-          image: '../assets/img/buy-comics-merchandise.png'
+          image: 'buy-comics-merchandise.png'
         },
         {
           href: '#!',
           text: 'subscription',
-          image: '../assets/img/buy-comics-subscriptions.png'
+          image: 'buy-comics-subscriptions.png'
         },
         {
           href: '#!',
           text: 'comic shop locator',
-          image: '../assets/img/buy-comics-shop-locator.png'
+          image: 'buy-comics-shop-locator.png'
         },
         {
           href: '#!',
           text: 'dc power visa',
-          image: '../assets/img/buy-comics-power-visa.png'
+          image: 'buy-dc-power-visa.svg'
         }
 
       ]
