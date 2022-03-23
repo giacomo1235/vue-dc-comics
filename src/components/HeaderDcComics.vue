@@ -66,10 +66,14 @@ export default {
 <style scoped lang="scss">
 @import "@/assets/styles/partials/variables";
 .container {
+  width: 100%;
     display: flex;
     justify-content: space-around;
     align-content: center;
-    padding: 20px;
+    /* padding: 20px; */
+}
+img {
+  padding: 5px;
 }
 
 ul {
@@ -82,6 +86,7 @@ li {
     text-transform: uppercase;
     display: flex;
     padding: 20px;
+    padding-bottom: 0;
     a {
         padding: 20px 0;
         color: black;

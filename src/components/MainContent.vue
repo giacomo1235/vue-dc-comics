@@ -6,7 +6,7 @@
         </div>
         <ul class="cards">
           <li v-for="card in cards" :key="card.text">
-            <img src="../assets/img/buy-comics-merchandise.png" :alt="card.text"> <!-- con card.image non va -->
+            <img src="../assets/img/buy-comics-digital-comics.png"  :alt="card.text"> <!-- con card.image non va :src="require('../assets/img/' + card.image)" -->
             <a :href="card.href">{{ card.text }}</a>
           </li>
         </ul>
@@ -62,6 +62,9 @@ export default {
   height: 133px;
   display: flex;
   align-items: center;
+  h1 {
+    margin-left: 100px;
+  }
 }
 .cards {
   background-color: $blue_logo_color;
