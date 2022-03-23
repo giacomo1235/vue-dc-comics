@@ -1,10 +1,14 @@
 <template>
 <main>
     <div class="container">
+        <div class="jumbotron"></div>
+        <div class="current">current series</div>
         <div class="contents">
           <CardHero v-for="hero in arrHeroes" :key="hero.series" :card-thumb="hero.thumb" :card-serie="hero.series" />
-          <h1>Content goes here</h1>
         </div>
+        <div class="button-load">
+            <button>load more</button>
+          </div>
         <ul class="cards">
           <li v-for="card in cards" :key="card.text">
             <img :src="card.image"  :alt="card.text"> <!-- con card.image non va :src="require('../assets/img/' + card.image)" -->
@@ -139,11 +143,46 @@ export default {
 .contents {
   background-color: black;
   color: white;
-  height: 133px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
+  padding: 20px 100px;
   h1 {
     margin-left: 100px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+.jumbotron {
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 400px;
+  }
+.current {
+  display: inline-block;
+  position: absolute;
+  top: 63%;
+  left: 7%;
+  background-color: $blue_logo_color;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  font-weight: 600;
+}
+.button-load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  button {
+    background-color: $blue_logo_color;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    margin: 20px;
+    padding: 10px 50px;
   }
 }
 .cards {

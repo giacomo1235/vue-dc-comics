@@ -1,7 +1,7 @@
 <template>
   <div class="card">
       <img :src="cardThumb" alt="">
-      <h2>{{cardSerie}}</h2>
+      <h2 class="title">{{cardSerie}}</h2>
   </div>
 </template>
 
@@ -19,9 +19,16 @@ export default {
 .card {
     text-transform: uppercase;
     color: white;
-}
-img {
-    width: 150px;
-    height: 150px;
+    width: 15%;
+    height: 15%;
+    overflow: hidden;
+    padding: 20px;
+    .title{
+      font-size: 1rem;
+    }
+    img {
+      width: 192px;
+      height: 192px;
+    }
 }
 </style>
