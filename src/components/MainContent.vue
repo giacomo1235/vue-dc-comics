@@ -162,7 +162,7 @@ export default {
 .current {
   display: inline-block;
   position: absolute;
-  top: 63%;
+  top: 500px;
   left: 7%;
   background-color: $blue_logo_color;
   color: white;
